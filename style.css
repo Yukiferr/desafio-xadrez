@@ -1,0 +1,36 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+#tabuleiro {
+    display: grid;
+    grid-template-columns: repeat(8, 80px);
+    grid-template-rows: repeat(8,80px);
+    border: 2px solid #333;
+}
+
+.quadrado {
+    width: 80px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 75px;
+    cursor: pointer;
+}
+
+.cor2 {
+    background-color: #EBECD0;
+}
+
+.cor1 {
+    background-color: #739552;
+}
+
+.selecionado {
+    background-color: rgba(0, 250, 250, 0.5);
+}
